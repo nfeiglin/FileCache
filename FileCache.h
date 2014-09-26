@@ -9,5 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface FileCache : NSObject
++ (void)cacheString:(NSString *)string forKey:(NSString *)key success:(void (^)(BOOL success))success failure:(void (^)(NSError *error))failure;
++ (NSString *)retrieveString:(NSString *)key success:(void (^)(NSString *string))success failure:(void (^)(NSError *error))failure;
 
 @end

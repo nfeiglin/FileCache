@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "FileCache.h"
 @interface JsonCache : NSObject
+- (void)getObjectFromJson:(NSString *)key success:(void (^)(id object))success failure:(void (^)(NSError *error))failure;
 
 @end
