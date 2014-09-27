@@ -78,7 +78,7 @@
         
         if (!isWritten) {
             if (failure) {
-                NSError *error = [[NSError alloc]initWithDomain:@"com.sailr.sailr" code:2 userInfo:@{ @"Desription": @"File not written"}];
+                NSError *error = [[NSError alloc]initWithDomain:@"com.sailr.sailr" code:2 userInfo:@{ @"Desription": @"Dictionary not written to file"}];
                 failure(error);
             }
         }
@@ -99,7 +99,7 @@
         
         if (!isWritten) {
             if (failure) {
-                NSError *error = [[NSError alloc]initWithDomain:@"com.sailr.sailr" code:2 userInfo:@{ @"Desription": @"File not written"}];
+                NSError *error = [[NSError alloc]initWithDomain:@"com.sailr.sailr" code:2 userInfo:@{ @"Desription": @"Array file not written"}];
                 failure(error);
             }
         }
