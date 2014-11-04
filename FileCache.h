@@ -17,11 +17,6 @@
 @property (strong, nonatomic) NSFileManager *fileManager;
 @property (strong, nonatomic) NSString *documentsPath;
 
-/*
-- (void)cacheString:(NSString *)string forKey:(NSString *)key success:(void (^)())success failure:(void (^)(NSError *error))failure;
-- (NSString *)retrieveString:(NSString *)key success:(void (^)(NSString *string))success failure:(void (^)(NSError *error))failure;
-*/
-
 - (void)doesCachedFileExistForKey:(NSString *)key success:(void (^)())existsCallback doesntExists:(void (^)())doesntExistCallback;
 
 - (void)cacheArray:(NSArray *)array forKey:(NSString *)key success:(void (^)())success failure:(void (^)(NSError *error))failure;
